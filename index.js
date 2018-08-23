@@ -4,3 +4,8 @@ function lowerCaseDrivers(array){
     return element.toLowerCase();
   });
 }
+function nameToAttributes(array){
+  return array.map(function(element){
+    return {firstName: array[0], lastName: array[1]};
+  })
+}
